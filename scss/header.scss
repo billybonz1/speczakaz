@@ -1,0 +1,260 @@
+@import "bourbon";
+@import "vars";
+@import "fonts";
+
+
+.shake{
+  animation-name: shake;
+  animation-timing-function: ease;
+  animation-duration: .4s;
+}
+
+@include keyframes(shake){
+  from{
+    transform: translateX(0px);
+  }
+  20%,60%{
+    transform: translateX(-10px);
+  }
+  40%,80%{
+    transform: translateX(10px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@if $adaptive == true {
+  @media (max-width: 480px){
+
+  }
+}
+
+.logo{
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  p{
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+    span{
+      color: #888888;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+.header-top{
+  padding: 30px 0;
+}
+
+.header-phone{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 70px;
+  p{
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    span{
+      color: #888888;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+.btn-orange{
+  color: #2a2a2a;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f1cc4b;
+  border: 2px solid #f1cc4b;
+  padding: 8px 32px;
+  border-radius: 5px;
+  &:hover,&:focus{
+    background-color: transparent;
+    color: #2a2a2a;
+  }
+  i{
+    vertical-align: middle;
+  }
+  span{
+    vertical-align: middle;
+  }
+}
+
+.header-call{
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 83px;
+  p{
+    margin-top: 5px;
+    span{
+      color: #2a2a2a;
+      font-size: 12px;
+      font-weight: 400;
+      vertical-align: middle;
+    }
+    i{
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}
+
+.h-mnu{
+  background-color: #f8f8f8;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  ul{
+    li{
+      a{
+        background-color: #f8f8f8;
+        transition: .2s all;
+        color: #212020;
+        font-size: 14px;
+        font-weight: 400;
+        float: left;
+        padding: 19px 67px;
+        position: relative;
+        i{
+          position: absolute;
+          top: 50%;
+          margin-top: -5.5px;
+          right: 20px;
+        }
+        &:hover,&:focus{
+          background-color: #f1cc4b;
+        }
+      }
+    }
+  }
+}
+
+.content-left{
+  max-width: 215px;
+}
+
+.content-right{
+  min-width: 1045px;
+  padding: 35px 0;
+}
+
+.content-img{
+  img{
+    width: 100%;
+  }
+  h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.content{
+  h2{
+    color: #636262;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+  }
+}
+
+.content-item{
+  display: block;
+  img{
+    width: 100%;
+  }
+}
+
+.content-item-line{
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+  background-color: #6bbefc;
+  padding: 30px 20px;
+  h2{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.63px;
+    margin-bottom: 10px;
+  }
+  p{
+    color: #386283;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    margin-right: 90px;
+  }
+}
+
+.btn-line{
+  &:hover,&:focus{
+    span{
+      margin-right: 5px;
+    }
+  }
+  span{
+    color: #386283;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: .2s all;
+  }
+  i{
+    vertical-align: middle;
+  }
+}
+
+.content-item-line-mod{
+  background-color: #efc447;
+  p{
+    color: #886b1e;
+  }
+  .btn-line{
+    span{
+      color: #886b1e;
+    }
+    i{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPBAMAAADE5vg+AAAAAXNSR0IB2cksfwAAACFQTFRFAAAA9NqF9diG9NmF9dmG9NmG99uH/9+A9dmF9dmG9NqFLhDdsAAAAAt0Uk5TADDf7//wQBDPUGCKESxsAAAAOklEQVR4nGNgAANGRRAp7CwAJEVdDEEiIZicFJcEBgb2FpcJDAwVLl5g5gIoE6hwAUhhFNi4AgbKAAAITQqTVMPGIAAAAABJRU5ErkJggg==);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
